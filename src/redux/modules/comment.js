@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const url_params = process.env.REACT_APP_url;
 const initialState = {
   loading: false,
   comments: [],
@@ -11,7 +12,7 @@ const fetchComments = createAsyncThunk(
   "post/fetchComments",
   async (thunkApi) => {
     try {
-      const res = await axios.get("http://localhost:3001/comments");
+      const res = await axios.get(`${url_params}/comments`);
       return res.data;
     } catch (error) {
       return error.message;
@@ -23,10 +24,7 @@ export const addComment = createAsyncThunk(
   "post/addComment",
   async (logData) => {
     try {
-      const response = await axios.post(
-        "http://localhost:3001/comments",
-        logData
-      );
+      const response = await axios.post(`${url_params}/comments`, logData);
       return response.data;
     } catch (error) {
       return error.message;
@@ -39,7 +37,7 @@ export const deleteComment = createAsyncThunk(
   async (commentId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3001/comments/${commentId}`
+        `${url_params}/comments/${commentId}`
       );
       return commentId;
     } catch (error) {
@@ -54,11 +52,9 @@ export const updateComment = createAsyncThunk(
   async ({ commentData, commentId }) => {
     try {
       const response = await axios.put(
-        `http://localhost:3001/comments/${commentId}`,
+        `${url_params}/comments/${commentId}`,
         commentData
       );
-      console.log(commentId);
-      console.log(commentData);
       return { commentId, commentData };
     } catch (error) {
       return error.message;

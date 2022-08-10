@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 import useInputs from "../../hooks/useInput";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { StBtn } from "../atoms/StBtn";
 import { StInput } from "../atoms/StInput";
 
-import { addPost, deletePost, updatePost } from "../../redux/modules/post";
+import { addPost } from "../../redux/modules/post";
 const PostForm = () => {
   const [{ nickname, title, body, img }, onChange, reset, toggle] = useInputs({
     nickname: "",
@@ -72,7 +72,12 @@ const PostForm = () => {
           onChange={onChange}
         />
         <StBtnWrapper>
-          <StBtn color="white" backgroundColor="black" width="7rem">
+          <StBtn
+            color="white"
+            backgroundColor="black"
+            width="7rem"
+            disabled={toggle ? true : false}
+          >
             작성완료
           </StBtn>
         </StBtnWrapper>

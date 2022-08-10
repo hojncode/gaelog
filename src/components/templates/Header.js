@@ -6,9 +6,7 @@ const Header = () => {
   const navi = useNavigate();
   return (
     <Headerbox>
-      {/* <StBtn onClick={() => navi(-1)}>뒤로가기</StBtn> */}
       <Logo src="/gaelogLogo.png" onClick={() => navi("/")}></Logo>
-      {/* <StBtn onClick={() => navi("/post")}>글작성하기</StBtn> */}
     </Headerbox>
   );
 };

@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk, isRejected } from "@reduxjs/toolkit";
 import axios from "axios";
 
+const url_params = process.env.REACT_APP_url;
 const initialState = {
   loading: false,
   posts: [],
@@ -11,7 +12,7 @@ export const fetchPosts = createAsyncThunk(
   "post/fetchPost",
   async (thunkApi) => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_LOCALAPI}gaebalog`);
+      const res = await axios.get(`${url_params}/gaebalog`);
       return res.data;
     } catch (error) {
       return error.message;
@@ -21,10 +22,7 @@ export const fetchPosts = createAsyncThunk(
 
 export const addPost = createAsyncThunk("post/addPost", async (logData) => {
   try {
-    const response = await axios.post(
-      `${process.env.REACT_APP_LOCALAPI}gaebalog`,
-      logData
-    );
+    const response = await axios.post(`${url_params}/gaebalog`, logData);
     return response.data;
   } catch (error) {
     return error.message;
@@ -35,9 +33,7 @@ export const deletePost = createAsyncThunk(
   "delete/deletePost",
   async (postId) => {
     try {
-      const response = await axios.delete(
-        `${process.env.REACT_APP_LOCALAPI}gaebalog/${postId}`
-      );
+      const response = await axios.delete(`${url_params}/gaebalog/${postId}`);
       return postId;
     } catch (error) {
       return error.message;
@@ -50,7 +46,7 @@ export const updatePost = createAsyncThunk(
   async ({ logData, postId }) => {
     try {
       const response = await axios.put(
-        `${process.env.REACT_APP_LOCALAPI}gaebalog/${postId}`,
+        `${url_params}/gaebalog/${postId}`,
         logData
       );
       return { postId, logData };

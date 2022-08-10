@@ -14,7 +14,7 @@ const EditComment = ({ setModal, param, commentId, editComment }) => {
     nickname: editComment.nickname,
     comment: editComment.comment,
   });
-  const commentData = { nickname, comment, comment_id: param };
+  const commentData = { nickname, comment, comment_id: parseInt(param) };
   const updatehandler = (e) => {
     e.preventDefault();
     dispatch(updateComment({ commentId, commentData }));
