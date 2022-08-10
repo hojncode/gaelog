@@ -113,10 +113,7 @@ const TitleBox = styled.h2`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
   /* 출처: https://jos39.tistory.com/211 [JOS39 블로그:티스토리] */
->>>>>>> 92fd0450c38cb8f9a2935f4af8d007ea69f2c677
 `;
 
 const StBody = styled.div`
