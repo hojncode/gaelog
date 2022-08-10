@@ -95,12 +95,11 @@ const StImg = styled.img`
 const TitleBox = styled.h2`
   margin: 2px 5px 2px 5px;
   width: 15rem;
-  height:3rem;
-  padding:0 5px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-출처: https://jos39.tistory.com/211 [JOS39 블로그:티스토리]
+  height: 3rem;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const StBody = styled.div`
