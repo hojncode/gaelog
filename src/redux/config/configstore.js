@@ -12,4 +12,5 @@ export default configureStore({
     postSlice: postSlice.reducer,
     commentSlice: commentSlice.reducer,
   },
+  devTools: process.env.NODE_ENV === "development",
 });

@@ -11,7 +11,7 @@ export const fetchPosts = createAsyncThunk(
   "post/fetchPost",
   async (thunkApi) => {
     try {
-      const res = await axios.get("http://localhost:3001/gaebalog");
+      const res = await axios.get(`${process.env.REACT_APP_LOCALAPI}gaebalog`);
       return res.data;
     } catch (error) {
       return error.message;
@@ -22,7 +22,7 @@ export const fetchPosts = createAsyncThunk(
 export const addPost = createAsyncThunk("post/addPost", async (logData) => {
   try {
     const response = await axios.post(
-      "http://localhost:3001/gaebalog",
+      `${process.env.REACT_APP_LOCALAPI}gaebalog`,
       logData
     );
     return response.data;
@@ -36,7 +36,7 @@ export const deletePost = createAsyncThunk(
   async (postId) => {
     try {
       const response = await axios.delete(
-        `http://localhost:3001/gaebalog/${postId}`
+        `${process.env.REACT_APP_LOCALAPI}gaebalog/${postId}`
       );
       return postId;
     } catch (error) {
@@ -50,7 +50,7 @@ export const updatePost = createAsyncThunk(
   async ({ logData, postId }) => {
     try {
       const response = await axios.put(
-        `http://localhost:3001/gaebalog/${postId}`,
+        `${process.env.REACT_APP_LOCALAPI}gaebalog/${postId}`,
         logData
       );
       return { postId, logData };
