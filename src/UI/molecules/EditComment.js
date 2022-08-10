@@ -23,7 +23,7 @@ const EditComment = ({ setModal, param, commentId, editComment }) => {
   return (
     <StEditComnt onSubmit={(e) => updatehandler(e)}>
       <div>
-        <span style={{ "font-size": "2rem" }}>↳</span>{" "}
+        <span style={{ fontSize: "2rem" }}>↳</span>{" "}
         <StInput
           type="text"
           value={nickname}

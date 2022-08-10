@@ -10,6 +10,10 @@ export const StInput = styled.input`
   padding-left: 20px;
   margin-right: ${(props) => props.marginRight};
 
+  &:focus {
+    outline: 2px solid black;
+  }
+
   &::placeholder {
     color: gainsboro;
   }

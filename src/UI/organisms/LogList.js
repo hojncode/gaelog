@@ -22,37 +22,46 @@ const LogList = () => {
   }, []);
 
   return (
-    <>
-      <StOne>
-        <StIconBox
-          onClick={() => {
-            navi("/post");
-          }}
+    <StOne>
+      <StIconBox
+        onClick={() => {
+          navi("/post");
+        }}
+      >
+        <StBtn
+          border="2px solid black"
+          hoverColor="white"
+          hoverBackgroundColor="black"
+          width="6rem"
         >
-          <StBtn hoverColor="grey">글작성 하기</StBtn>
-        </StIconBox>
-        <StTempBoxOutline>
-          {reverse.map((x) => {
-            return (
-              <StTempBox
-                key={x.id}
-                onClick={() => {
-                  navi(`/detail/${x.id}`);
-                }}
-              >
-                <StImg src={x.img} onError={onErrorImg} />
-                <LayoutBox>
-                  {" "}
-                  <TitleBox>{x.title}</TitleBox>
-                  <StBody>{x.body}</StBody>
-                  <StbtnStyle>내용 더보기...</StbtnStyle>
-                </LayoutBox>
-              </StTempBox>
-            );
-          })}
-        </StTempBoxOutline>
-      </StOne>
-    </>
+          글작성 하기
+        </StBtn>
+      </StIconBox>
+      <StTempBoxOutline>
+        {reverse.map((x) => {
+          return (
+            <StTempBox
+              key={x.id}
+              onClick={() => {
+                navi(`/detail/${x.id}`);
+              }}
+            >
+              <StImg src={x.img} onError={onErrorImg} />
+              <LayoutBox>
+                {" "}
+                <TitleBox>{x.title}</TitleBox>
+                <StBody>{x.body}</StBody>
+                <div style={{ margin: "0 auto 5px auto" }}>
+                  <StBtn color="white" backgroundColor="#b8b8b8" width="6rem">
+                    내용 더보기
+                  </StBtn>
+                </div>
+              </LayoutBox>
+            </StTempBox>
+          );
+        })}
+      </StTempBoxOutline>
+    </StOne>
   );
 };
 
@@ -82,6 +91,10 @@ const StTempBox = styled.div`
   margin-top: 10px;
 
   background-color: #fafafa;
+  cursor: pointer;
+  &:hover {
+    border: 5px solid transparent;
+  }
 `;
 
 const StImg = styled.img`
@@ -100,6 +113,10 @@ const TitleBox = styled.h2`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+<<<<<<< HEAD
+=======
+  /* 출처: https://jos39.tistory.com/211 [JOS39 블로그:티스토리] */
+>>>>>>> 92fd0450c38cb8f9a2935f4af8d007ea69f2c677
 `;
 
 const StBody = styled.div`

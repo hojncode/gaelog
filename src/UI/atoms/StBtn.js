@@ -9,7 +9,7 @@ export const StBtn = styled.button`
   border-radius: 20px;
   background-color: ${(props) => props.backgroundColor || "transparent"};
   color: ${(props) => props.color || "black"};
-  border: none;
+  border: ${(props) => props.border || "none"};
 
   &:hover {
     color: ${(props) => props.hoverColor};

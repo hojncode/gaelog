@@ -94,7 +94,7 @@ const StModalContainer = styled.div`
   width: 50rem;
   height: 40rem;
 
-  margin: 8% auto 0 auto;
+  margin: 5% auto;
 
   border: none;
   border-radius: 44px;
@@ -144,6 +144,9 @@ const Text = styled.textarea`
   border: none;
   overflow-y: auto;
   resize: none;
+  &:focus {
+    outline: 2px solid black;
+  }
 `;
 const BtnContainer = styled.div`
   display: flex;

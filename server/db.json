@@ -1,74 +1,11 @@
 {
   "gaebalog": [
     {
-      "id": 8,
-      "nickname": "안",
-      "title": "dfdfdfdd이거 지금 내가 수정중인디",
-      "body": "ㅇㄹㅇㄹdfdfdfddddfdfdfdfdff",
-      "img": ""
-    },
-    {
       "id": 11,
       "nickname": "이게뭘까",
-      "title": "ㄹㅎㄹㅎ",
-      "body": "ㅇㄹㅇㄹㅇㄹ",
+      "title": "호잇",
+      "body": "수정이 잘 될까여..?",
       "img": "https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F388b8aaa-1f41-4bdc-b251-7ee0e1d19ec3%2FUntitled.png?table=block&id=8f6ac830-64e9-49f1-b7bc-562300b8c6c2&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1590&userId=&cache=v2"
-    },
-    {
-      "id": 12,
-      "nickname": "ff",
-      "title": "ffgf",
-      "body": "ffffff",
-      "img": "https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F388b8aaa-1f41-4bdc-b251-7ee0e1d19ec3%2FUntitled.png?table=block&id=8f6ac830-64e9-49f1-b7bc-562300b8c6c2&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1590&userId=&cache=v2"
-    },
-    {
-      "id": 13,
-      "nickname": "fgfg",
-      "title": "fgf",
-      "body": "fgfg",
-      "img": ""
-    },
-    {
-      "id": 14,
-      "nickname": "fgf",
-      "title": "fgfg",
-      "body": "fgf",
-      "img": ""
-    },
-    {
-      "id": 15,
-      "nickname": "fgfg",
-      "title": "dffg",
-      "body": "fgfg",
-      "img": ""
-    },
-    {
-      "nickname": "gfg",
-      "title": "fgfg",
-      "body": "fffffffffff\nffffff\\\nfffff",
-      "img": "",
-      "id": 16
-    },
-    {
-      "id": 17,
-      "nickname": "ghgh",
-      "title": "gghghgh",
-      "body": "ghgh",
-      "img": ""
-    },
-    {
-      "id": 18,
-      "nickname": "dfdf",
-      "title": "frdf",
-      "body": "dfdf",
-      "img": ""
-    },
-    {
-      "nickname": "ggggg",
-      "title": "gggg",
-      "body": "ff\nfgfg\nfgfg\nfgf\n\nfgfg\nfgf",
-      "img": "",
-      "id": 19
     },
     {
       "id": 20,
@@ -85,8 +22,8 @@
     },
     {
       "nickname": "ㅗㅓㅗ",
-      "title": "구현기능4",
-      "body": "useinput이라는 커스텀 훅을 사용하였습니다.\n훅에서 닉네임의 유효성 검사가 이뤄지고 \n유효성검사를 통과하면 버튼이 활성화됩니다.  ",
+      "title": "어디 한 번?",
+      "body": "useinput이라는 커스텀 훅을 사용하였습니다.\n훅에서 닉네임의 유효성 검사가 이뤄지고 \n유효성검사를 통과하면 버튼이 활성화됩니다.  \n호잇",
       "img": "https://i.gifer.com/66q2.gif",
       "id": 22
     },
@@ -117,6 +54,13 @@
       "body": "리스트기능 : 글을 작성하면 최신글부터 리스트에 보여줍니다.\n\n\n\n\n",
       "img": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif",
       "id": 26
+    },
+    {
+      "nickname": "캘로그",
+      "title": "ㅊㅣ-즈",
+      "body": "여러분 그동안 한 주동안 고생많으셨습니다. 그런 의미로 fresh한 새출발을 위해 여기를 봐주세요",
+      "img": "https://i.imgflip.com/4/5g8g6.jpg",
+      "id": 27
     }
   ],
   "comments": [
@@ -145,16 +89,28 @@
       "id": 4
     },
     {
-      "nickname": "dfdf",
-      "comment": "dfdf",
+      "nickname": "개구리",
+      "comment": "개구리가 깨구루루룩",
       "comment_id": "22",
       "id": 5
     },
     {
-      "nickname": "1231",
-      "comment": "asfdasf",
+      "nickname": "캘로그",
+      "comment": "댓글도 달아보겠습니다",
       "comment_id": "22",
       "id": 6
+    },
+    {
+      "nickname": "캘로그",
+      "comment": "댓글답니다ㅋㅋㅋ",
+      "comment_id": "25",
+      "id": 7
+    },
+    {
+      "nickname": "윌스미스",
+      "comment": "싱글로그 안으로 넣어버림",
+      "comment_id": "25",
+      "id": 8
     }
   ]
 }

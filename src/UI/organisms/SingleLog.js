@@ -47,8 +47,7 @@ const SingleLog = () => {
               <h1>{log.title}</h1>
               <StInformation>
                 <p>
-                  By{" "}
-                  <span style={{ "font-weight": "bold" }}>{log.nickname}</span>
+                  By <span style={{ fontWeight: "bold" }}>{log.nickname}</span>
                 </p>
                 <StBtnWrapper>
                   <StBtn

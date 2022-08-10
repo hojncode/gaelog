@@ -83,9 +83,9 @@ const PostForm = () => {
 export default PostForm;
 
 const FormBox = styled.div`
-  border-color: rgb(221, 221, 221);
+  /* border-color: rgb(221, 221, 221);
   border-style: solid;
-  box-shadow: 0 3px 3px 0 grey;
+  box-shadow: 0 3px 3px 0 grey; */
   padding-bottom: 30px;
   margin: 0 auto 3rem;
   width: 70%;
@@ -124,7 +124,9 @@ const Text = styled.textarea`
   font-size: 1rem;
   line-height: 150%;
   overflow-y: auto;
-
+  &:focus {
+    outline: 2px solid black;
+  }
   &::placeholder {
     color: gainsboro;
   }
